@@ -9,8 +9,8 @@
 
 <div class="container" ng-controller="AppCtrl">
 
-	<h1>Edwin's WebPage</h1>
-	<div ng-controller="Education">
+	<h1>Education <span class="glyphicon glyphicon-education"></span></h1>
+	<div>
 			<table class="table">
 				<thead>
 					<tr>
@@ -20,10 +20,40 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat = "school in schoollist">
-						<td>{{school.name}}</td>
+					<tr ng-repeat = "school in educationlist">
+						<td>{{school.school}}</td>
 						<td>{{school.degree}}</td>
 						<td>{{school.last_year}}</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h1>Skills <span class="glyphicon glyphicon-wrench"></span></h1>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Skill</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat = "skill in skilllist">
+						<td>{{skill.skill}}</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h1>Projects <span class="glyphicon glyphicon-briefcase"></span></h1>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Title</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat = "project in projectlist">
+						<td>{{project.title}}</td>
+						<td>{{project.description}}</td>
 					</tr>
 				</tbody>
 			</table>
