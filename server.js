@@ -9,7 +9,7 @@ app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
 
 	app.get('/educationlist', function(req, res){
-		console.log("I received a GET request");
+		console.log("I received a GET request for education");
 
 		db.resumedata.find({ type:"edu" } ,function(error, docs){
 		console.log(docs);
@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 	});
 
 	app.get('/skilllist', function(req, res){
-		console.log("I received a GET request");
+		console.log("I received a GET request for skills");
 
 		db.resumedata.find({ type:"skill" } ,function(error, docs){
 		console.log(docs);
@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 	});
 
 	app.get('/projectlist', function(req, res){
-		console.log("I received a GET request");
+		console.log("I received a GET request for projects");
 
 		db.resumedata.find({ type:"project" } ,function(error, docs){
 		console.log(docs);
@@ -38,8 +38,8 @@ app.use(bodyParser.json());
 
 	});
 
-console.log("Server running on port 3000, DON'T FORGET TO CHANGE TO 8080 when all done");
+//console.log("Server running on port 3000, DON'T FORGET TO CHANGE TO 8080 when all done");
 //node server ======= to start server!!
 //start mongod first /
 //call mongo on another terminal to see whats in database
-	app.listen(3000);
+	app.listen(8080);

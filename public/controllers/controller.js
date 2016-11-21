@@ -9,19 +9,19 @@ myApp.controller('AppCtrl',['$scope','$http',function($scope,$http){
 
 		$http.get("/educationlist").success(function(response){
 			$scope.educationlist = response;
-			console.log("called refresh");
+			console.log("getting education");
 			console.log(response);
 		});
 
 		$http.get("/skilllist").success(function(response){
 			$scope.skilllist = response;
-			console.log("called refresh");
+			console.log("getting skills");
 			console.log(response);
 		});
 
 		$http.get("/projectlist").success(function(response){
 			$scope.projectlist = response;
-			console.log("called refresh");
+			console.log("getting projects");
 			console.log(response);
 		});
 	};
