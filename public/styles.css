@@ -1,7 +1,13 @@
 #body{
-background:url('../img/background.JPG');
+background:url('/img/_MG_5440.png');
 background-size:cover;
 background-repeat: no-repeat;
+}
+div.page-header,div.jumbotron{
+  background-color: transparent;
+}
+#headerText, small.lead{
+  color:#FFFFFF;
 }
 footer {
     animation: transition 5s linear;

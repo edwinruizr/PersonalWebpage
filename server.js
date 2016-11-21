@@ -42,4 +42,4 @@ app.use(bodyParser.json());
 //node server ======= to start server!!
 //start mongod first /
 //call mongo on another terminal to see whats in database
-	app.listen(80);
+	app.listen(3000);
