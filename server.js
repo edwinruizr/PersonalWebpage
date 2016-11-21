@@ -38,8 +38,8 @@ app.use(bodyParser.json());
 
 	});
 
-//console.log("Server running on port 3000, DON'T FORGET TO CHANGE TO 8080 when all done");
+//console.log("Server running on port 3000, DON'T FORGET TO CHANGE TO 80 when all done");
 //node server ======= to start server!!
 //start mongod first /
 //call mongo on another terminal to see whats in database
-	app.listen(8080);
+	app.listen(80);
